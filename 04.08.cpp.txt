@@ -1,0 +1,16 @@
+Exercise 4.8: Explain when operands are evaluated in the logical AND, logical
+OR, and equality operators.
+
+-------------------------------------------------------------------------
+
++) logical AND (&&)
+   expr1 && expr2
+expr2 is evaluated if and only if expr1 is true
+
++) logical OR (||)
+   expr1 || expr2
+expr2 is evaluated if and only if expr1 is false
+
++) equality operator (==)
+   val1 == val2
+Equality operator reuturns bool type. if val2 =val1, the equality operator reuturns true and vice versa

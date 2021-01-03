@@ -1,0 +1,10 @@
+Exercise 4.9: Explain the behavior of the condition in the following if:
+
+const char *cp = "Hello World";
+if (cp && *cp)
+
+-------------------------------------------------------------------------
+Logical AND (&&) returns bool type.
+cp is a const pointer of char array. cp has value that is address if first char array and 
+*cp has value that is ASCII code of character "H". So expression "if (cp && *cp)" returns true. 
+

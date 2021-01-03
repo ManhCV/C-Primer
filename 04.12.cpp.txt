@@ -1,0 +1,8 @@
+Exercise 4.12: Assuming i, j, and k are all ints, explain what i != j <
+k means.
+
+-------------------------------------------------------------------------
+operator != (inequality) and  < (less than) have same priority level and they return bool type.
+So, we evaluate from left to right. First is expression i != j, it returns true or false.
+After that, true or false value is evaluated with k value. If k is greater than 1,
+expression  i != j < k is always true.
