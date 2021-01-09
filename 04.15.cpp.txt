@@ -1,0 +1,12 @@
+Exercise 4.15: The following assignment is illegal. Why? How would you
+correct it?
+
+double dval; int ival; int *pi;
+dval = ival = pi = 0;
+
+-------------------------------------------------------------------------
+Can not assign pi to ival because can not assign pointer of int type to int
+
+Correct:
+double dval; int ival; int pi;
+dval = ival = pi = 0;
