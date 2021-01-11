@@ -1,0 +1,5 @@
+Exercise 4.17: Explain the difference between prefix and postfix increment.
+
+-------------------------------------------------------------------------
++) Prefix increment increases value and return original operand.
++) Postix increment increases value and return a copy original operand. It unchanges the value of original operand. 

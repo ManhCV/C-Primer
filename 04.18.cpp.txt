@@ -1,0 +1,18 @@
+Exercise 4.18: What would happen if the while loop on page 148 that
+prints the elements from a vector used the prefix increment operator?
+
+auto pbeg = v.begin();
+// print elements up to the first negative value
+while (pbeg != v.end() && *pbeg >= 0)
+cout << *pbeg++ << endl; // print the current value and advance pbeg
+
+-------------------------------------------------------------------------
+if you prefix increment, the while loop becomes:
+auto pbeg = v.begin();
+// print elements up to the first negative value
+while (pbeg != v.end() && *pbeg >= 0)
+cout << *++pbeg << endl; // print the current value and advance pbeg
+
+Because the precedence of prefix increment is higher than dereference, so *++pbeg equivalant to *(++pbeg).
+The subexpression ++pbeg increments pbeg and yields the changed object as its result.
+Thus, the statement prints the element to which pbeg newly pointed (not originaly pbeg pointed) and increments pbeg.
