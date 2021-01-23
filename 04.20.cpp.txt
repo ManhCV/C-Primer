@@ -1,0 +1,29 @@
+Exercise 4.20: Assuming that iter is a vector<string>::iterator,
+indicate which, if any, of the following expressions are legal. Explain the
+behavior of the legal expressions and why those that aren’t legal are in error.
+(a) *iter++;
+(b) (*iter)++;
+(c) *iter.empty()
+(d) iter->empty();
+(e) ++*iter;
+(f) iter++->empty();
+-------------------------------------------------------------------------
+(a) *iter++;
+It is legal. It increases the address of pointer iter.(postfixincrement)
+
+(b) (*iter)++;
+It is legal. It increases the value of object that poiter iter point.
+
+(c) *iter.empty()
+It is inlegal. This expression attempts to check object iter is empty or not. However, iter is a
+pointer, which has no members; this code will not compile.
+
+(d) iter->empty();
+It is legal. 
+
+(e) ++*iter;
+It is legal. It increases the address of pointer iter right now.(prefixincrement)
+
+(f) iter++->empty();
+It is legal. This expression attempts to check object iter is empty or not and then increase the 
+address of iter pointed.

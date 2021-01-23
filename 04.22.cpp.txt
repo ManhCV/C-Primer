@@ -1,0 +1,59 @@
+Exercise 4.22: Extend the program that assigned high pass, pass, and fail
+grades to also assign low pass for grades between 60 and 75 inclusive. Write
+two versions: One version that uses only conditional operators; the other
+should use one or more if statements. Which version do you think is easier
+to understand and why?
+-------------------------------------------------------------------------
+
+Ver 1.0: Using nested conditional operators
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int grade = 0;
+    std::cout << "input the grade from 0 to 100: " << std::endl;
+    std::cin >> grade;
+    
+    std::cout << ((grade > 90) ? "high pass" : ((grade > 75) ? "pass" : (grade >= 60 && grade <=75) ? "low pass" : "fail")) << std::endl;
+    
+    return 0;
+}
+
+Ver 2.0: Using if-else
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int grade = 0;
+    std::cout << "input the grade from 0 to 100: " << std::endl;
+    std::cin >> grade;
+    if(grade > 90)
+    {
+        std::cout << "high pass" << std::endl;
+        return 0;
+    }
+    else if (grade > 75 && grade <= 90)
+    {
+        std::cout << "pass" << std::endl;
+        return 0;
+    }
+    else if (grade >= 60 && grade <= 75)
+    {
+        std::cout << "low pass" << std::endl;
+        return 0;
+    }
+    else
+    {
+        std::cout << "fail" << std::endl;
+        return 0;
+    }
+}
+
+Comment: Ver 2.0 using if-else is more easier to understand. Because version 1.0 using more than 2 conditional operators.
