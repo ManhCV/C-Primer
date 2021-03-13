@@ -1,0 +1,6 @@
+Exercise 5.2: What is a block? When might you might use a block?
+-------------------------------------------------------------------------
+
+Block is a series of statement. It is defined by curly brace {}
+When we use loop, condition,... that we need more than 1 statement to write 
+logic of program.
