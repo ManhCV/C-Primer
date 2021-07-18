@@ -1,0 +1,29 @@
+Exercise 6.2: Indicate which of the following functions are in error and why.
+Suggest how you might correct the problems.
+(a) int f() {
+string s;
+// ...
+return s;
+}
+(b) f2(int i) { /* ... */ }
+(c) int calc(int v1, int v1) /* ... */ }
+(d) double square(double x) return x * x;
+-------------------------------------------------------------------------
+
+(a) int f() {
+string s;
+// ...
+return s;
+}
+
+Wrong. Function can not return an array. It can return pointer to an array
+-> return *s
+
+(b) f2(int i) { /* ... */ }
+Wrong. Function must return an value.
+
+(c) int calc(int v1, int v1) /* ... */ }
+Wrong. Function must return an value.
+
+(d) double square(double x) return x * x;
+True

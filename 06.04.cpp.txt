@@ -1,0 +1,30 @@
+Exercise 6.4: Write a function that interacts with the user, asking for a
+number and generating the factorial of that number. Call this function from
+main.
+-------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int fact(int n)
+{
+    int a = 1;
+    while(n>1)
+    {
+        a *=n--;
+    }
+    return a;
+}
+int main()
+{
+    int num;
+    int ret;
+    cout<<"Program calculate factorial of a number"<<endl;
+    cout<<"Input a number: ";
+    cin >> num;
+    //cout<< num<<endl;
+    ret = fact(num); 
+    cout<<"Result: "<<ret<<endl;
+    return ret;
+}

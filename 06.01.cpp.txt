@@ -1,0 +1,9 @@
+Exercise 6.1: What is the difference between a parameter and an
+argument?
+-------------------------------------------------------------------------
+
+Argument is the initializer of parameter
+Example;
+int func1(int val1, int val2) : val1, val 2 are the parameters
+
+int a = func1(4,5): 4 and 5 are the arguments
