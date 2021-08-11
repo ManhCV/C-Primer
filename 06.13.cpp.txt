@@ -1,0 +1,8 @@
+Exercise 6.13: Assuming T is the name of a type, explain the difference
+between a function declared as void f(T) and void f(T&).
+-------------------------------------------------------------------------
+
+void f(T) l? ki?u truy?n gi? tr?, function s? copy gi? tr? c?a T v? th?c hi?n c?c thay ??i tr?n ??
+gi? tr? c?a T ko thay ??i
+void f(T&) l? ki?u truy?n tham chi?u, function s? th?c hi?n c?c ph?p to?n tr?c ti?p tr?n T,
+do ?? l?m thay ??i gi? tr? c?a T.

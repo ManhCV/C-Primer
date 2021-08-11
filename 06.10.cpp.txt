@@ -1,0 +1,24 @@
+Exercise 6.10: Using pointers, write a function to swap the values of two
+ints. Test the function by calling it and printing the swapped values.
+-------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+int swap(int* n, int* m)
+{
+	int temp = *n; 
+    *n = *m;
+    *m = temp;
+}
+int main()
+{
+    int num1, num2;
+    cout<<"Input 2 numbers n1 and n2: ";
+	cin>>num1>>num2;
+	cout<<endl;
+    cout<<"Swapped value of n1 and n2: ";
+	swap (&num1, &num2);
+	cout<<num1<<" "<<num2<<endl;
+    return 1;
+}

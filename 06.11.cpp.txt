@@ -1,0 +1,21 @@
+Exercise 6.11: Write and test your own version of reset that takes a
+reference
+-------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+void reset(int& n)
+{
+	n= 0; 
+}
+int main()
+{
+    int num1, num2;
+    cout<<"Test the reset function!"<<endl;
+	cout<<"Input a number: ";
+	cin>>num1;
+	reset(num1);
+	cout<<"The value after reset function call: "<<num1<<endl;
+    return 1;
+}

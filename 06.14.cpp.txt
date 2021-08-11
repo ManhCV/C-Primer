@@ -1,0 +1,6 @@
+Exercise 6.14: Give an example of when a parameter should be a reference
+type. Give an example of when a parameter should not be a reference
+-------------------------------------------------------------------------
+
+should be a reference type: when we want funtion return more than 1 parameter, we can use "pass by reference type".
+should not be a reference type: when we dont want change the value of the passed-to parameter, we should not use "pass by reference type".

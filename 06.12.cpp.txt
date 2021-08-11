@@ -1,0 +1,25 @@
+Exercise 6.12: Rewrite the program from exercise 6.10 in § 6.2.1 (p. 210)
+to use references instead of pointers to swap the value of two ints. Which
+version do you think would be easier to use and why?
+-------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+void swap(int& n, int& m)
+{
+	n=n+m;
+	m=n-m;
+	n=n-m;
+}
+int main()
+{
+    int num1, num2;
+    cout<<"Input 2 numbers n1 and n2: ";
+	cin>>num1>>num2;
+	cout<<endl;
+    cout<<"Swapped value of n1 and n2: ";
+	swap (num1, num2);
+	cout<<num1<<" "<<num2<<endl;
+    return 1;
+}
