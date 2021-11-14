@@ -1,0 +1,6 @@
+Exercise 6.49: What is a candidate function? What is a viable function?
+-------------------------------------------------------------------------
+
+Candidate functions: THe set of overloaded functions considered for the call are the candidate functions
+Viable functions: The selected functions that can be called with the arguments in the given call are the viable functions
+

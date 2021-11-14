@@ -1,0 +1,52 @@
+Exercise 6.50: Given the declarations for f from page 242, list the viable
+functions, if any for each of the following calls. Indicate which function is the
+best match, or if the call is illegal whether there is no match or why the call
+is ambiguous.
+(a) f(2.56, 42)
+(b) f(42)
+(c) f(42, 0)
+(d) f(2.56, 3.14)
+
+List the overloaded functions
+void f();
+void f(int);
+void f(int, int);
+void f(double, double = 3.14);
+-------------------------------------------------------------------------
+
+(a) f(2.56, 42)
+
+The viable functions:
+void f(int, int);
+void f(double, double = 3.14);
+The best match function:
+-> There is no the best match function because the call is ambiguous. 
+The 1st argument is exaclty match with void f(double, double = 3.14); but the 2nd paramenter is best match with void f(int, int);
+
+(b) f(42)
+The viable functions:
+void f(int);
+void f(int, int);
+void f(double, double = 3.14);
+The best match function:
+void f(int);
+->Because the number of parameter and the type of the parameter is match with function void f(int);
+
+(c) f(42, 0)
+The viable functions:
+void f(int, int);
+void f(double, double = 3.14);
+The best match function:void f(int, int);
+->Because the number of parameter and the type of the parameter is match with function void f(int, int)
+
+(d) f(2.56, 3.14)
+The viable functions:
+void f(int, int);
+void f(double, double = 3.14);
+The best match function:void f(double, double = 3.14);
+->Because the number of parameter and the type of the parameter is match with function void f(double, double = 3.14)
+
+
+
+
+
